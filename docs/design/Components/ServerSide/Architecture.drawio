@@ -1,0 +1,99 @@
+<mxfile host="Electron" modified="2023-05-31T11:58:57.193Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="GUvxxEqrv90VJ1VStc6G" version="21.1.2" type="device">
+  <diagram name="第 1 页" id="JZLRs3JDX44u-gM2QdpG">
+    <mxGraphModel dx="778" dy="553" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RS4_EAijdRlg69gRwfyr-1" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;SDFS Server Side Architecture&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="371" y="18" width="471" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="RS4_EAijdRlg69gRwfyr-3" target="RS4_EAijdRlg69gRwfyr-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-3" value="Parse Request Message" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="588" y="351" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="RS4_EAijdRlg69gRwfyr-5" target="RS4_EAijdRlg69gRwfyr-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1088" y="391" />
+              <mxPoint x="1088" y="391" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-5" value="Handle" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="828" y="351" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-7" value="Local Basic Unix File System" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1068" y="351" width="80" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="RS4_EAijdRlg69gRwfyr-11" target="RS4_EAijdRlg69gRwfyr-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-11" value="Handle" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="828" y="471" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-12" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="RS4_EAijdRlg69gRwfyr-11" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1068" y="511" as="sourcePoint" />
+            <mxPoint x="1118" y="461" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-13" value="Wrap Respnse Message" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="588" y="471" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-17" value="SNDTP Involved" style="swimlane;whiteSpace=wrap;html=1;strokeColor=default;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="568" y="254" width="201" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.004;exitY=0.576;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.001;entryY=0.59;entryDx=0;entryDy=0;entryPerimeter=0;" parent="RS4_EAijdRlg69gRwfyr-17" target="RS4_EAijdRlg69gRwfyr-13" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-56" y="266" as="sourcePoint" />
+            <mxPoint x="40" y="269" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-19" value="inetSocket Involved" style="swimlane;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="34" y="254" width="187" height="373" as="geometry" />
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="RS4_EAijdRlg69gRwfyr-19" source="RS4_EAijdRlg69gRwfyr-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="262.4444274902344" y="136.66666666666674" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-2" value="Protocol Request Message" style="rounded=0;whiteSpace=wrap;html=1;" parent="RS4_EAijdRlg69gRwfyr-19" vertex="1">
+          <mxGeometry x="9" y="97" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-10" value="Protocol Response Message" style="rounded=0;whiteSpace=wrap;html=1;" parent="RS4_EAijdRlg69gRwfyr-19" vertex="1">
+          <mxGeometry x="9" y="217" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-32" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.004;exitY=0.576;exitDx=0;exitDy=0;exitPerimeter=0;" parent="RS4_EAijdRlg69gRwfyr-19" source="RS4_EAijdRlg69gRwfyr-10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="176" y="266" as="sourcePoint" />
+            <mxPoint x="266" y="266" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-20" value="Service Involved" style="swimlane;whiteSpace=wrap;html=1;dashed=1;swimlaneFillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="805" y="254" width="200" height="372" as="geometry" />
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-23" value="Server" style="swimlane;whiteSpace=wrap;html=1;strokeColor=default;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="295" y="254" width="217" height="377" as="geometry" />
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-34" value="Simple Thread Pool" style="rounded=0;whiteSpace=wrap;html=1;" parent="RS4_EAijdRlg69gRwfyr-23" vertex="1">
+          <mxGeometry x="2" y="84" width="215" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-35" value="Internet socket" style="rounded=0;whiteSpace=wrap;html=1;" parent="RS4_EAijdRlg69gRwfyr-23" vertex="1">
+          <mxGeometry y="177" width="215" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RS4_EAijdRlg69gRwfyr-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="391" as="targetPoint" />
+            <mxPoint x="512" y="390.91999999999996" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="582" y="390.59000000000003" />
+              <mxPoint x="582" y="390.59000000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

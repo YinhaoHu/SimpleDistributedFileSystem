@@ -1,0 +1,33 @@
+#ifndef _BUFS_MKFS_H_
+#define _BUFS_MKFS_H_
+
+#include"param.h" 
+
+//Specfications
+#define BUFS_SUPER_INUM (0)
+
+#define BUFS_SUPER_BLOCK_ADDR (0)
+#define BUFS_SUPER_BLOCK_LEN (1)
+
+#define BUFS_INODE_BITMAP_ADDRESS (1)
+#define BUFS_INODE_BITMAP_LEN (1)
+#define BUFS_DATA_BITMAP_ADDRESS (2)
+#define BUFS_DATA_BITMAP_LEN (1)
+
+#define BUFS_INODE_REGION_ADDRESS (3)
+#define BUFS_INODE_REGION_LEN (1)
+#define BUFS_NUM_INODES (32)
+
+// Balance the divise and the save  
+#define BUFS_MAX_DIRS (8)
+#define BUFS_MAX_FILES (BUFS_NUM_INODES - BUFS_MAX_DIRS)
+
+#define BUFS_DATA_REGION_ADDRESS (4) 
+#define BUFS_DATA_REGION_LEN (BUFS_MAX_DIRS + ( BUFS_MAX_FILES * BUFS_DIRECT_PTRS) )
+#define BUFS_NUM_DATA  (BUFS_DATA_REGION_LEN) 
+
+#define BUFS_FS_BLOCKS (BUFS_SUPER_BLOCK_LEN + BUFS_INODE_BITMAP_LEN + BUFS_DATA_BITMAP_LEN + BUFS_INODE_REGION_LEN + BUFS_DATA_REGION_LEN)
+
+int mkfs(char* fs_img);
+
+#endif
