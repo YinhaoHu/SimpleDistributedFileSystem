@@ -27,5 +27,5 @@ at runtime. This is what SDFS supported to its user.
   You can find the website of this project in the second entry of `My works` on www.centhoo.top.
 
 ## More
-  It not easy to build a perfect system even impossible, so if you find any bugs or have any suggestions, feel free to tell the maintainer
+  It is not easy to build a perfect system even impossible, so if you find any bugs or have any suggestions, feel free to tell the maintainer
 or disscuss in the `issues` section of this project.
